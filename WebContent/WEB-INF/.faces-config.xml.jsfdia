@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:componentes-visuais.xhtml"
+  PATH="componentes-visuais.xhtml" SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:componentes-visuais.xhtml:0" NAME="item"
+   PATH="componentes-visuais.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="proximo::templates-e-modularizacao.xhtml"
+    NAME="output" PATH="templates-e-modularizacao.xhtml"
+    TARGET="rules:templates-e-modularizacao.xhtml" TITLE="proximo" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:templates-e-modularizacao.xhtml"
+  PATH="templates-e-modularizacao.xhtml" SHAPE="256,33,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:templates-e-modularizacao.xhtml:0" NAME="item"
+   PATH="templates-e-modularizacao.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="proximo::navegacao.xhtml" NAME="output"
+    PATH="navegacao.xhtml" TARGET="rules:navegacao.xhtml"
+    TITLE="proximo" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="anterior::componentes-visuais.xhtml"
+    NAME="output1" PATH="componentes-visuais.xhtml"
+    TARGET="rules:componentes-visuais.xhtml" TITLE="anterior" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:navegacao.xhtml" PATH="navegacao.xhtml"
+  SHAPE="480,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:navegacao.xhtml:0" NAME="item"
+   PATH="navegacao.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="anterior::templates-e-modularizacao.xhtml"
+    NAME="output" PATH="templates-e-modularizacao.xhtml"
+    TARGET="rules:templates-e-modularizacao.xhtml" TITLE="anterior" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:principal-avancada.xhtml"
+  PATH="principal-avancada.xhtml" SHAPE="256,321,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:principal-simples.xhtml"
+  PATH="principal-simples.xhtml" SHAPE="256,177,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:*" PATH="*" SHAPE="32,273,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:*:0" NAME="item" PATH="*" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="principal::principal-simples.xhtml"
+    NAME="output" PATH="principal-simples.xhtml"
+    TARGET="rules:principal-simples.xhtml" TITLE="principal" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="principal::principal-avancada.xhtml"
+    NAME="output1" PATH="principal-avancada.xhtml"
+    TARGET="rules:principal-avancada.xhtml" TITLE="principal" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+</PROCESS>
